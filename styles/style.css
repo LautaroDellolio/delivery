@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: rgb(17, 207, 0);
+    text-align: center;
+    height: 65vh;
+}
+
+.logoImg {
+    margin: 10px;
+    width: 40vh;
+    border-radius: 200px;
+}
+
+.divHeader {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+}
+
+main>h2,
+main>span {
+    text-align: center;
+    padding: 15px;
+}
+
+main h3 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+main h3:hover {
+    cursor: pointer;
+}
+
+.styleSection {
+    margin: 10px 0;
+    justify-items: center;
+}
+
+.box {
+    width: 100%;
+    /* height: 150px; */
+    /* border: 2px solid black; */
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box>img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.divBox {
+    margin: 5px;
+}
+
+.toggle-header {
+    margin: 5px;
+}
+
+.pop-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 95vw;
+    min-height: 70vh;
+    max-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.pop-up>img {
+    width: 100%;
+    max-height: 30vh;
+}
+
+.descriptioPopup {
+    padding-left: 10px;
+    /* border: solid 2px red; */
+}
+
+.descriptioPopup>p {
+    padding: 3px;
+    font-size: 0.9rem;
+}
+
+.descriptioPopup .opcionesPopup {
+    /* border: solid 2px rgb(22, 70, 199); */
+    font-size: 1.2rem;
+}
+
+.descriptioPopup .inputPopup {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 30px;
+    font-size: 1.3rem;
+}
+
+#closePopup {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#closePopup:hover {
+    transition: all 1ms ease-in-out;
+    background-color: rgba(255, 0, 0, 0.8);
+    transform: scale(1.1);
+    /* Ligero aumento al pasar el cursor */
+}
+
+.spanContinuar {
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    transform: translateX(-20%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.estiloContenidoAdicional h4 {
+    /* border: 1px solid red; */
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.estiloOpciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    width: 100%;
+    /* border: 2px solid green; */
+}
+
+.divBtn {
+    display: flex;
+    /* border: 1px solid blue;  */
+    text-align: center;
+
+} 
+
+.btnMas {
+    /* padding: 5px; */
+    /* margin: 5px 0; */
+    font-size: 1.1rem;
+    background-color: darkorange;
+    /* border: none; */
+    border-radius: 10px;
+    width: 2rem;
+}
+
+/* .styleInput {
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 60px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid red;
+} */
+
+.styleInput {
+    padding: 0; /* Elimina padding predeterminado */
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0px 10px;
+    width: 60px;
+    height: 40px; /* Define altura fija para mejor centrado */
+    border: none;
+    border-radius: 15px;
+    text-align: center; /* Centra horizontalmente el texto */
+    /* border: 1px solid red; */
+    -moz-appearance: textfield; /* Firefox */
+    -webkit-appearance: none; /* Chrome, Safari, Edge */
+    appearance: none; /* Navegadores modernos */
+}
+.styleInput::-webkit-inner-spin-button,
+.styleInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.observaciones {
+    width: 97%;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
