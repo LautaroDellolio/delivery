@@ -225,7 +225,7 @@ function generarOpcionesProducto(categoria, precio, incluirInputs = false) {
                     ${incluirInputs ? `<input type="radio" name="tamaño" value="grande">` : ""}
                 </div>
             </div>
-        `    
+        `
     } else {
         return `
             <div>
@@ -310,8 +310,8 @@ function variablesPopup() {
                         </div> 
                     </div>    
                 `).join("");
-                 // Generar el HTML de los postres
-                 const postresHTML = postres.map(postre => `
+                // Generar el HTML de los postres
+                const postresHTML = postres.map(postre => `
                     <div class="postre-item estiloOpciones">
                         <p>${postre.nombre} - $${postre.precio.chica || "-"}</p>
                         <div class="divBtn">
@@ -340,13 +340,18 @@ function variablesPopup() {
                         <input placeholder="observaciones"                   type="textarea"
                         class="observaciones"
                         >
-                        <div class="divBtn">
+                        <div class="divBtnPopup">
+                            <label>Cantidad: </label>
+                            <div>
                             <button onclick="restar(event)" class="btnMas">-</button>
-                            <input class="styleInput valorInputs" placeholder="Cant." type="number" readonly>
+                            <input class="styleInput valorInputs" value="1" placeholer="Cant." type="number" readonly>
                             <button onclick="sumar(event)" class="btnMas">+</button>
+                            </div>
                         </div> 
-                        <button>Cancelar</button>
-                        <button>Agregar Pedido</button>
+                        <div class="divBtnPop">
+                            <button class="btnPop" >Cancelar</button>
+                            <button class="btnPop">Agregar Pedido</button>
+                        </div>
                     </div>
                 `;
             }

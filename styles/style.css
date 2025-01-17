@@ -80,7 +80,7 @@ main h3:hover {
     left: 50%;
     width: 95vw;
     min-height: 70vh;
-    max-height: 100vh;
+    max-height: 90vh;
     background-color: rgb(255, 255, 255);
     transform: translate(-50%, -50%);
     display: none;
@@ -167,12 +167,16 @@ main h3:hover {
     /* border: 2px solid green; */
 }
 
-.divBtn {
+.divBtnPopup {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     /* border: 1px solid blue;  */
     text-align: center;
-
 } 
+/* .divBtnPopup div{
+    display: flex;
+} */
 
 .btnMas {
     /* padding: 5px; */
@@ -183,17 +187,6 @@ main h3:hover {
     border-radius: 10px;
     width: 2rem;
 }
-
-/* .styleInput {
-    padding: 5px;
-    font-size: 1.2rem;
-    font-weight: 400;
-    width: 60px;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid red;
-} */
-
 .styleInput {
     padding: 0; /* Elimina padding predeterminado */
     font-size: 1.2rem;
@@ -221,4 +214,15 @@ main h3:hover {
     padding: 5px;
     border: 1px solid black;
     border-radius: 10px;
+}
+.btnPop {
+    background-color: cornflowerblue;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 10px;
+}
+.divBtnPop{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
 }
